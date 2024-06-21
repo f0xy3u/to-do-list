@@ -20,7 +20,10 @@
             <div class="nadpis">Vytořit úkol</div>
             <div class="newNtContainer">
                 <div class="form">
-                    <input type="text" name="nazev" id="nazevNew" placeholder="Název činnosti">
+                    <div class="jmeno">
+                        <input type="text" name="nazev" id="nazevNew" placeholder="Název činnosti">
+                        <div class="nevyplneno">Vyplňte prosím jméno</div>
+                    </div>
                     <textarea name="obsah" id="obsahNew" placeholder="Co musíš udělat" rows="3" cols="60"></textarea>
                 </div>
                 <div class="buttons"><button class="newNtBtn">Potvrdit</button></div>
@@ -28,7 +31,10 @@
         </div>
         <div class="existingNotes">
             <div class="nadpis">Vytvořené úkoly</div>
+            <div class="actualNotes">
         </div>
     </div>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>
