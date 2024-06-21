@@ -58,6 +58,10 @@ function createNewElement() {
     checkBoxBtn.innerText = `✔`
 
     EventListenerAdder('a' + numberOfThings)
+
+    //Smazání formuláře
+    newName.value = ''
+    newInfo.value = ''
 }
 
 function EventListenerAdder(id) {
@@ -76,3 +80,9 @@ function finishedWork(id) {
 }
 
 confirmButton.addEventListener('click', fullnessCheck)
+document.addEventListener('keydown', (e) => {
+    key = e.key
+    if (key == 'Enter') {
+        fullnessCheck()
+    }
+})
